@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://safehaven/skin/overlay.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://safehaven/locale/overlay.dtd">
+<overlay id="sample" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+		<script src="safehaven.js" />
+
+		<menupopup id="menu_ToolsPopup">
+			<menuitem label="&runsafehaven;" key="sh-run-key" oncommand="safeHaven.run()"/>
+		</menupopup>
+
+		<keyset>
+			<key id="sh-run-key" modifiers="accel alt shift" key="H" oncommand="safeHaven.run()"/>
+		</keyset>
+
+		<statusbar id="status-bar">
+			<statusbarpanel id="sh-status-bar-icon" class="statusbarpanel-iconic" tooltiptext="&runsafehaven;" safe="true"/>
+		</statusbar>
+
+		<toolbarpalette id="BrowserToolbarPalette">
+			<toolbarbutton id="sh-toolbarbutton" label="Safe Haven" tooltiptext="&runsafehaven;" oncommand="safeHaven.run()"/>
+		</toolbarpalette>
+</overlay>

@@ -1,0 +1,18 @@
+#sh-toolbarbutton {
+	list-style-image: URL("chrome://safehaven/skin/sh-status.png");
+    -moz-image-region: rect(0px, 24px, 24px, 0px);
+}
+
+#sh-status-bar-icon[safe="true"] {
+	list-style-image: URL("chrome://safehaven/skin/sh-status.png");
+    -moz-image-region: rect(0px, 24px, 24px, 0px);
+}
+
+#sh-status-bar-icon[safe="false"] {
+	list-style-image: URL("chrome://safehaven/skin/sh-status.png");
+    -moz-image-region: rect(24px, 24px, 48px, 0px);
+}
+
+.sh-selected {
+	outline: 2px solid red !important;
+}

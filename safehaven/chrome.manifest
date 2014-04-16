@@ -1,0 +1,7 @@
+content     safehaven    chrome/content/
+overlay chrome://browser/content/browser.xul chrome://safehaven/content/overlay.xul
+
+locale	safehaven	en-US	chrome/locale/en-US/
+
+skin	safehaven	classic/1.0	chrome/skin/
+style	chrome://global/content/customizeToolbar.xul	chrome://safehaven/skin/overlay.css
